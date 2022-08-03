@@ -1263,15 +1263,6 @@ ol {
    transition: all 0.2s ease;
 }
 
-.contact__btn:hover {
-   background-color: var(--dark-gray);
-   color: var(--yellow);
-}
-
-.contact__btn:active {
-   opacity: 0.6;
-}
-
 /* ======================= FOOTER START ======================= */
 
 .footer {
@@ -1293,6 +1284,14 @@ ol {
 .footer__item:nth-child(2) {
    margin-top: 14px;
    margin-bottom: 14px;
+}
+
+.footer__logo:hover {
+   opacity: 0.8;
+}
+
+.footer__logo:active {
+   opacity: 0.6;
 }
 
 .footer__link {
