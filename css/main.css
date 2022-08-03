@@ -8,6 +8,40 @@
    /* --main-line-height : 1.5; */
 }
 
+/* FONTS */
+
+@font-face {
+   font-family: "FuturaPT", "Arial", sans-serif;
+   font-display: swap;
+   font-weight: 300;
+   src: url('../fonts/FuturaPT-Light.woff2') format('woff2'),
+   url('../fonts/FuturaPT-Light.woff') format('woff');
+}
+
+@font-face {
+   font-family: "FuturaPT", "Arial", sans-serif;
+   font-display: swap;
+   font-weight: 400;
+   src: url('../fonts/FuturaPT-Book.woff2') format('woff2'),
+   url('../fonts/FuturaPT-Book.woff') format('woff');
+}
+
+@font-face {
+   font-family: "FuturaPT", "Arial", sans-serif;
+   font-display: swap;
+   font-weight: 500;
+   src: url('../fonts/FuturaPT-Medium.woff2') format('woff2'),
+   url('../fonts/FuturaPT-Medium.woff') format('woff');
+}
+
+@font-face {
+   font-family: "FuturaPT", "Arial", sans-serif;
+   font-display: swap;
+   font-weight: 700;
+   src: url('../fonts/FuturaPT-Bold.woff2') format('woff2'),
+   url('../fonts/FuturaPT-Bold.woff') format('woff');
+}
+
 /* GENERAL */
 
 *,
@@ -52,13 +86,15 @@ p {
 
 ul,
 ol {
+   margin: 0;
+   padding: 0;
    list-style-type: none;
 }
 
 /* CONTAINER */
 
 .container {
-   /* max-width: px; */
+   max-width: 1350px;
    margin-right: auto;
    margin-left: auto;
    padding-right: 20px;
