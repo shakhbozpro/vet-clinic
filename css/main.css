@@ -419,3 +419,84 @@ ol {
 .hero__link:active {
    opacity: 0.6;
 }
+
+/* ======================= ABOUT START ======================= */
+
+.about {
+   
+}
+
+.about__inner {
+}
+
+.about__info-wrapper {
+   position: relative;
+   width: 805px;
+   text-align: center;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+.about__info-wrapper::before {
+   position: absolute;
+   top: 10px;
+   left: -55px;
+   width: 50px;
+   height: 42px;
+   background-image: url("../images/quote-start.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   content: "";
+}
+
+.about__info-wrapper::after {
+   position: absolute;
+   top: 80px;
+   right: -55px;
+   width: 51px;
+   height: 42px;
+   background-image: url("../images/quote-end.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   content: "";
+}
+
+.about__info-text {
+   position: relative;
+   font-size: 20px;
+   line-height: 26px;
+   color: var(--dimgray);
+   margin: 0;
+   margin-bottom: 35px;
+   padding-top: 43px;
+   padding-bottom: 35px;
+}
+
+.about__info-text::before {
+   position: absolute;
+   top: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 140px;
+   height: 1px;
+   background-color: #DBDBDB;
+   content: "";
+}
+
+.about__info-text::after {
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 140px;
+   height: 1px;
+   background-color: #DBDBDB;
+   content: "";
+}
+
+.about__info-heading {
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 26px;
+   color: var(--dark-gray);
+}
