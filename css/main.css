@@ -310,7 +310,7 @@ ol {
 }
 
 .nav__link:hover {
-   border-bottom: 4px solid #eaff5f;
+   border-bottom: 4px solid #F4FFAD;
 }
 
 .nav__link:active {
@@ -872,6 +872,14 @@ ol {
    border-radius: 5px;
 }
 
+.status__item:hover {
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.status__item:active {
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 .status__item--active {
    width: 640px;
    display: flex;
@@ -884,7 +892,8 @@ ol {
 }
 
 .status__item--active > .status__item-img {
-   height: 100%;
+   width: 305px;
+   height: 435px;
    margin-right: 31px;
    margin-bottom: -1px;
 }
@@ -899,7 +908,7 @@ ol {
 }
 
 .status__lattice-item {
-
+   
 }
 
 .status__lattice-item:nth-child(2) {
@@ -968,6 +977,10 @@ ol {
    align-items: center; 
 }
 
+.status__item-link:hover {
+   color: var(--yellow);
+}
+
 .status__item-link::before {
    content: "";
    display: inline-block;
@@ -977,4 +990,238 @@ ol {
    background-image: url("../images/paw-icon.svg");
    background-repeat: no-repeat;
    background-size: contain;
+}
+
+/* ======================= CONTACT START ======================= */
+
+.contact {
+   background-color: var(--dark-gray);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.contact__wrapper {
+   width: 1520px;
+   background-image: url("../images/contact-bg-img.png");
+   background-repeat: no-repeat;
+   background-position: center right;
+   display: flex;
+   align-items: center;
+}
+
+.contact__map {
+   width: 500px;
+   height: 652px;
+   margin-right: 166px;
+}
+
+.contact__connectings {
+   width: 375px;
+}
+
+.contact__heading {
+   font-size: 48px;
+   line-height: 62px;
+   color: #FFFFFF;
+   margin-bottom: 14px;
+}
+
+.contact__text {
+   line-height: 20px;
+   margin-bottom: 29px;
+   color: var(--dimgray);
+}
+
+.contact__form {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.contact__input {
+   width: 100%;
+   border: none;
+   outline: none;
+   border: 2px solid transparent;
+   margin-bottom: 14px;
+   padding: 16px 22px 13px 22px;
+}
+
+.contact__input:focus {
+   border-color: var(--yellow);
+}
+
+.contact__input:not(:placeholder-shown):not(:focus):invalid {
+   border-color: #DC4D41;
+}
+
+.contact__textarea {
+   width: 100%;
+   padding: 17px 22px;
+   margin-bottom: 30px;
+   resize: none;
+}
+
+.contact__btn {
+   border: none;
+   display: inline-block;
+   font-weight: 500;
+   line-height: 21px;
+   color: #FFFFFF;
+   padding: 15px 49px 14px 50px;
+   background-color: var(--yellow);
+   cursor: pointer;
+   transition: all 0.2s ease;
+}
+
+.contact__btn:hover {
+   background-color: var(--dark-gray);
+   color: var(--yellow);
+}
+
+.contact__btn:active {
+   opacity: 0.6;
+}
+
+/* ======================= FOOTER START ======================= */
+
+.footer {
+   margin-top: 247px;
+   padding-top: 54px;
+   padding-bottom: 23px;
+   background-color: #F3F3F3;
+}
+
+.footer__inner {
+   display: flex;
+   justify-content: space-between;
+}
+
+.footer__logo {
+
+}
+
+.footer__logo-img {
+
+}
+
+.footer__list {
+
+}
+
+.footer__item {
+
+}
+
+.footer__item:nth-child(2) {
+   margin-top: 14px;
+   margin-bottom: 14px;
+}
+
+.footer__link {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 21px;
+   color: var(--dark-gray);
+   text-decoration: none;
+}
+
+.footer__link:hover {
+   color: var(--yellow);
+}
+
+.footer__link:active {
+   color: var(--dark-gray);
+   opacity: 0.6;
+}
+
+.footer__time-list {
+   position: relative;
+}
+
+.footer__time-list::before {
+   position: absolute;
+   top: 0;
+   left: -28px;
+   width: 14px;
+   height: 15px;
+   background-image: url("../images/calendar.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   content: "";
+}
+
+.footer__time {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 18px;
+   color: var(--dark-gray);
+}
+
+.footer__address {
+   position: relative;
+}
+
+.footer__address::before {
+   position: absolute;
+   top: 2px;
+   left: -28px;
+   width: 14px;
+   height: 13px;
+   background-image: url("../images/house-icon.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   content: "";
+}
+
+.footer__address-link {
+   font-weight: 500;
+   line-height: 21px;
+   color: var(--dark-gray);
+   display: flex;
+   font-style: normal;
+   text-decoration: none;
+}
+
+.footer__number-list {
+   position: relative;
+}
+
+.footer__number-list::before {
+   position: absolute;
+   top: 0;
+   left: -26px;
+   width: 13px;
+   height: 13px;
+   background-image: url("../images/phone-icon.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   content: "";
+}
+
+.footer__number-item {
+
+}
+
+.footer__number-item:nth-child(2) {
+   margin-top: 4px;
+   margin-bottom: 4px;
+}
+
+.footer__number-link {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 18px;
+   color: var(--dark-gray);
+   text-decoration: none;
+}
+
+.footer__number-link:hover {
+   color: var(--yellow);
+}
+
+.footer__number-link:active {
+   color: var(--dark-gray);
+   opacity: 0.6;
 }
