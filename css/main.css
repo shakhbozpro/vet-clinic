@@ -122,7 +122,7 @@ ol {
    flex-grow: 1;
 }
 
-/* HEADER START */
+/* ======================= HEADER START ======================= */
 
 .header {
    
@@ -291,12 +291,13 @@ ol {
 }
 
 .nav {
-   
+   width: 723px;
 }
 
 .nav__list {
    display: flex;
    align-items: center;
+   flex-wrap: wrap;
 }
 
 .nav__list::before {
@@ -357,4 +358,64 @@ ol {
    background-image: url("../images/paw-icon.svg");
    background-repeat: no-repeat;
    background-size: contain;
+}
+
+/* ======================= HERO START ======================= */
+
+.hero {
+   padding-top: 145px;
+   padding-bottom: 290px;
+   background-image: url("../images/hero-pets.png") , url("../images/hero-parrot.png");
+   background-position: calc(50% - 550px) calc(50% - 70px) , calc(50% - -710px) calc(50% - -215px);
+   background-repeat: no-repeat;
+}
+
+.hero__inner {
+   
+}
+
+.hero__info-wrapper {
+   width: 608px;
+   margin-left: auto;
+}
+
+.hero__heading {
+   font-weight: 700;
+   font-size: 70px;
+   line-height: 64px;
+   margin-bottom: 29px;
+}
+
+.hero__heading > span {
+   color: #78C0DE;
+}
+
+.hero__desc {
+   width: 495px;
+   font-size: 16px;
+   line-height: 21px;
+   color: var(--dimgray);
+   margin-bottom: 29px;
+}
+
+.hero__link {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 21px;
+   color: #FFFFFF;
+   padding: 15px 48px 16px 47px;
+   background-color: var(--dark-gray);
+   border-radius: 3px;
+   display: inline-block;
+   text-decoration: none;
+   transition: all 0.2s ease;
+}
+
+.hero__link:hover {
+   color: var(--dark-gray);
+   background-color: var(--yellow);
+}
+
+.hero__link:active {
+   opacity: 0.6;
 }
