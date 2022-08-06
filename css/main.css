@@ -19,6 +19,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* VARIABLES */
 
 :root {
@@ -941,6 +948,7 @@ ol {
 }
 
 .article__input:not(:placeholder-shown):not(:focus):invalid {
+   color: #DC4D41;
    border-color: #DC4D41;
 }
 
@@ -1181,6 +1189,10 @@ ol {
    color: var(--yellow);
 }
 
+.status__item-link:active {
+   color: var(--dark-gray);
+}
+
 .status__item-link::before {
    content: "";
    display: inline-block;
@@ -1279,6 +1291,7 @@ ol {
 }
 
 .contact__input:not(:placeholder-shown):not(:focus):invalid {
+   color: #DC4D41;
    border-color: #DC4D41;
 }
 
