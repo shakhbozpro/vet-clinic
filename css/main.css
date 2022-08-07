@@ -1471,10 +1471,6 @@ ol {
    background-position: calc(50% - -510px);
 }
 
-.systems-hero__inner {
-   
-}
-
 .systems-hero__info-wrapper {
    width: 447px;
 }
@@ -1495,10 +1491,6 @@ ol {
 
 .systems {
    padding-bottom: 168px;
-}
-
-.systems__inner {
-   
 }
 
 .systems__list {
@@ -1697,4 +1689,185 @@ ol {
 
 .systems__item-link--mdf:active {
    opacity: 0.6;
+}
+
+/* FAQ START */
+
+.faq-hero {
+   position: relative;
+   padding-top: 110px;
+   padding-bottom: 63px;
+}
+
+.faq-hero__inner {
+   padding-left: 110px;
+}
+
+.faq-hero__info-wrapper {
+   width: 447px;
+}
+
+.faq-hero__heading {
+   font-size: 70px;
+   line-height: 64px;
+   color: var(--dark-gray);
+   margin-bottom: 27px;
+}
+
+.faq-hero__desc {
+   line-height: 20px;
+   color: var(--dimgray);
+   margin-bottom: 35px;
+}
+
+.faq-hero__link {
+   padding: 15px 39px;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 21px;
+   color: #FFFFFF;
+   background-color: #78C0DE;
+   border-radius: 3px;
+   display: inline-block;
+   display: inline-flex;
+   align-items: center;
+   text-decoration: none;
+}
+
+.faq-hero__link::before {
+   content: "";
+   display: inline-block;
+   width: 21px;
+   height: 22px;
+   background-image: url("../images/appointment-icon.svg");
+   background-repeat: no-repeat;
+   margin-right: 6px;
+}
+
+.faq-hero__img {
+   position: absolute;
+   top: 70px;
+   right: 0;
+}
+
+.characteristics {
+   padding-bottom: 270px;
+   background-image: url("../images/faq-parrot.png");
+   background-repeat: no-repeat;
+   background-position: calc(50% - -578px) calc(50% - -215px);
+}
+
+.characteristics__box {
+   width: 752px;
+   padding: 27px 41px 42px 63px;
+   background-color: #fff;
+   border: 1px solid #F3F3F3;
+   border-radius: 5px;
+}
+
+.characteristics__box:not(:last-child) {
+   margin-bottom: 18px;
+}
+
+.characteristics__time-wrapper {
+   display: inline-flex;
+   align-items: center;
+   margin-bottom: 11px;
+}
+
+.characteristics__box .characteristics__time-wrapper::before {
+   content: "";
+   display: inline-block;
+   width: 28px;
+   height: 29px;
+   background-repeat: no-repeat;
+   background-size: contain;
+   margin-right: 7px;
+}
+
+.characteristics__box:nth-child(1) .characteristics__time-wrapper::before {
+   background-image: url("../images/faq-paw.svg");
+}
+
+.characteristics__box:nth-child(2) .characteristics__time-wrapper::before {
+   background-image: url("../images/faq-blue-paw.svg");
+}
+
+.characteristics__box:nth-child(3) .characteristics__time-wrapper::before {
+   background-image: url("../images/faq-paw.svg");
+}
+
+.characteristics__box:nth-child(4) .characteristics__time-wrapper::before {
+   background-image: url("../images/faq-blue-paw.svg");
+}
+
+.characteristics__box:nth-child(5) .characteristics__time-wrapper::before {
+   background-image: url("../images/faq-paw.svg");
+}
+
+.characteristics__box:nth-child(6) .characteristics__time-wrapper::before {
+   background-image: url("../images/faq-blue-paw.svg");
+}
+
+.characteristics__time {
+   font-size: 14px;
+   line-height: 22px;
+   color: var(--dark-gray);
+   margin-right: 28px;
+}
+
+.characteristics__box:nth-child(3) .characteristics__time,
+.characteristics__box:nth-child(6) .characteristics__time {
+   opacity: 0.6;
+}
+
+.characteristics__person-name {
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 22px;
+   letter-spacing: 0.08em;
+   text-transform: uppercase;
+   color: #78C0DE;
+}
+
+.characteristics__det {
+   
+}
+
+.characteristics__box:nth-child(3) .characteristics__det,
+.characteristics__box:nth-child(6) .characteristics__det {
+   opacity: 0.6;
+   background-image: none;
+   background-image: url("../images/faq-clock.svg");
+   background-repeat: no-repeat;
+   background-position: right center;
+}
+
+.characteristics__box:nth-child(3),
+.characteristics__box:nth-child(6):hover {
+   cursor: not-allowed;
+}
+
+.characteristics__sum {
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 22px;
+   color: var(--dark-gray);
+   list-style-type: none;
+   background-repeat: no-repeat;
+   background-position: right center;
+   transition: all 0.2s ease;
+}
+
+.characteristics__box:nth-child(1) .characteristics__sum,
+.characteristics__box:nth-child(2) .characteristics__sum,
+.characteristics__box:nth-child(4) .characteristics__sum,
+.characteristics__box:nth-child(5) .characteristics__sum {
+   background-image: url("../images/det-dropdown.svg");
+}
+
+.characteristics__text {
+   line-height: 20px;
+   color: var(--dimgray);
+   margin-top: 23px;
 }
