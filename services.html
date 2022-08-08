@@ -4,9 +4,9 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
-   <!-- <link rel="stylesheet" href="./css/main.css"> -->
-   <link rel="stylesheet" href="./css/main.min.css">
+   <link rel="stylesheet" href="./css/normalize.css">
+   <link rel="stylesheet" href="./css/main.css">
+   <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
    <title>Services</title>
 </head>
 <body>
@@ -81,7 +81,7 @@
                   </ul>
                </nav>
                
-               <a class="header-bottom__link" href="#">Задать вопрос</a>
+               <button class="header-bottom__btn js-modal-open">Задать вопрос</button>
             </div>
          </div>
       </div>
@@ -285,5 +285,37 @@
    </footer>
    <!-- SITE FOOTER FINISH -->
    
+   <!-- MODAL START -->
+   <div class="overlay">
+      <div class="modal">
+         <button class="js-modal-close" type="button">
+            <img src="./images/modal-close.svg" alt="Close x button" width="18" height="18">
+         </button>
+         <div class="modal-container">
+            <div class="modal-inner">
+               <div class="modal-info__left">
+                  <strong class="modal-info__left-title">Авторизация:</strong>
+                  <a class="modal-info__link" href="https://www.google.co.uz/" target="blank">Войти через Google</a>
+                  <a class="modal-info__link" href="https://www.facebook.com/" target="blank">Войти через Facebook</a>
+               </div>
+               
+               <div class="modal-info__right">
+                  <h2 class="modal-info__heading">Задать вопрос</h2>
+                  <form class="modal-info__form" action="https://echo.htmlacademy.ru/courses" method="POST" autocomplete="off">
+                     <input class="modal-info__input" type="text" name="user_name" aria-label="Write your name" minlength="3" placeholder="Ваше имя" required>
+                     <textarea class="modal-info__textarea" name="user_message" aria-label="Write your question" minlength="5" placeholder="Опишите Ваш вопрос.
+Например: в каком возрасте можно прививать от бешенства?" rows="8" required></textarea>
+                     <button class="modal-info__btn-send" type="submit">Задать вопрос</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- MODAL FINISH -->
+   
+   
+   
+   <script src="./js/main.js"></script>
 </body>
 </html>
